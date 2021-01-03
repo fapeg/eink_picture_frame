@@ -1,0 +1,10 @@
+www-data ALL=(ALL) NOPASSWD:/bin/tee
+www-data ALL=(ALL) NOPASSWD:/bin/systemctl restart dhcpcd
+www-data ALL=(ALL) NOPASSWD:/bin/systemctl stop hostapd
+www-data ALL=(ALL) NOPASSWD:/home/pi/python_files/restartnetworkkillhotspot.sh
+www-data ALL=(ALL) NOPASSWD:/sbin/iwlist
+www-data ALL=(ALL) NOPASSWD:/home/pi/python_files/killhotspotnow.sh
+www-data ALL=(ALL) NOPASSWD:/home/pi/python_files/checknetworkanddisplaysuccess.sh
+www-data ALL=(ALL) NOPASSWD:/home/pi/python_files/image.py
+www-data ALL=(ALL) NOPASSWD:/bin/ls
+www-data ALL=(ALL) NOPASSWD:/home/pi/python_files/mails/getmail.py
