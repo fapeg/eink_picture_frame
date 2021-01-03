@@ -25,7 +25,7 @@ Files in this repository:
 ### Smartphone admin area ###
 *Warning: I wouldn't recommend running this on a pi that is reachable over the actual internet since I don't know if I did a good enough job escaping all the user inputs :P I'm running it in my local network, so it's fine..*
 * I got a lighttpd running because I use RaspAP in AP-STA mode. I installed it to be able to configure the wifi settings anywhere I go but that's a little complicated to document lol so right now I'm focusing on the admin area
-* **start.php**: Display the options to get mail and to display already saved images.
+* **start.php**: Display the options to get mail and to display already saved images. If you click on 'get mail' this file also runs the actual script that checks your mail and displays the image in the picture frame (useful if you don't have a cronjob running or don't want to wait)
 * **selectimage.php**: Show all saved images and display the one the user clicks on on the picture frame
 * **wifi.png, pictures.png, mailpicture.png and bootstrap.min.css** not included for licencing reasons but you can get fitting icons on flaticon.com and the bootstrap file on getbootstrap.com
 * **091_mod**: You also have to be careful with this file :D You can save it in /etc/sudoers.d/ and it's being added to the sudoers file. That is required because we run some shell commands in the PHP scripts which are being executed under the www-data user (because this users starts the lighttpd server). So I use the workaround and sudo the scripts, for that to be possible I define exceptions which programs the user can run in this file. It might not be a good idea to allow the user www-data access to commands like tee so be careful
