@@ -1,5 +1,10 @@
 # eInk picture frame
 
+<img src="https://github.com/fapeg/eink_picture_frame/blob/main/exampleimages/picture_small_1.jpg?raw=true" height="200" alt="picture frame" />
+Digital picture frame made with a Pi Zero W, a Pimoroni inky impression and an IKEA RIBBA picture frame (10x15cm) which fits (almost 😅) perfectly! A cron job checks for new Mail every 5 minutes, automatically resizes the attached image to fit the eInk display’s resolution and displays it. You can also select the picture from your smartphone.
+
+
+
 What you need:
 -------------------
 
